@@ -28,6 +28,7 @@ CREATE TABLE user_events (
     additional_info String
 ) ENGINE = MergeTree()
 ORDER BY (timestamp);
+
 Data Ingestion: Configured batch jobs or a streaming mechanism to transfer data into ClickHouse, ensuring the data pipeline handles large volumes without affecting performance. This setup leverages ClickHouse’s high-speed ingestion capabilities to keep up with real-time event tracking.
 
 Real-Time Analytics and Reporting: Once data is stored in ClickHouse, analytical queries can be performed on large datasets, providing insights on user engagement metrics, such as active users, popular content, and conversion rates.
